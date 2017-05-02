@@ -12,127 +12,11 @@
 <body>
   <div class="layout">
     <!--===========layout-header================-->
-    <div class="layout-header am-hide-sm-only">
-      <!--topbar start-->
-      <!-- <div class="topbar">
-        <div class="container">
-          <div class="am-g">
-            <div class="am-u-md-3">
-              <div class="topbar-left">
-                <i class="am-icon-globe"></i>
-                <div class="am-dropdown" data-am-dropdown>
-                  <button class="am-btn am-btn-primary am-dropdown-toggle" data-am-dropdown-toggle>Language <span class="am-icon-caret-down"></span></button>
-                  <ul class="am-dropdown-content">
-                    <li><a href="#">English</a></li>
-                    <li class="am-divider"></li>
-                    <li><a href="#">Chinese</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="am-u-md-9">
-              <div class="topbar-right am-text-right am-fr">
-                Follow us
-                <i class="am-icon-facebook"></i>
-                <i class="am-icon-twitter"></i>
-                <i class="am-icon-google-plus"></i>
-                <i class="am-icon-pinterest"></i>
-                <i class="am-icon-instagram"></i>
-                <i class="am-icon-linkedin"></i>
-                <i class="am-icon-youtube-play"></i>
-                <i class="am-icon-rss"></i>
-                <a href="./login.html">登录</a>
-                <a href="./register.html">注册</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!--topbar end-->
-
-      <div class="header-box" data-am-sticky>
-        <!--header start-->
-          <div class="container">
-            <div class="header">
-              <div class="am-g">
-                <div class="am-u-lg-2 am-u-sm-12">
-                  <div class="logo">
-                    <a href=""><img src="../assets/images/logo.png" alt="" /></a>
-                  </div>
-                </div>
-                <div class="am-u-md-10">
-                  <div class="header-right am-fr">
-                    <div class="header-contact">
-                      <div class="header_contacts--item">
-                        <div class="contact_mini">
-                          <i style="color:#7c6aa6" class="contact-icon am-icon-phone"></i>
-                          <strong>010-84763288</strong>
-                          <span>周一~周日, 9:00 - 21:00</span>
-                        </div>
-                      </div>
-                      <div class="header_contacts--item">
-                        <div class="contact_mini">
-                          <i style="color:#7c6aa6" class="contact-icon am-icon-envelope-o"></i>
-                          <strong>runshikangjian@163.com</strong>
-                          <span>随时欢迎您的来信！</span>
-                        </div>
-                      </div>
-                      <div class="header_contacts--item">
-                        <div class="contact_mini">
-                          <i style="color:#7c6aa6" class="contact-icon am-icon-map-marker"></i>
-                          <strong>二号楼3号底商</strong>
-                          <span>北京市朝阳区望京阜荣街15号院</span>
-                        </div>
-                      </div>
-                    </div>
-                    <a href="../html/contact.html" class="contact-btn">
-                      <button type="button" class="am-btn am-btn-secondary am-radius">联系我们</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!--header end-->
-
-
-        <!--nav start-->
-        <div class="nav-contain">
-          <div class="nav-inner">
-            <ul class="am-nav am-nav-pills am-nav-justify">
-              <li class=""><a href="../index.html">首页</a></li>
-              <li>
-                <a href="#">产品中心</a>
-                <!-- sub-menu start-->
-                <ul class="sub-menu">
-									<li class="menu-item"><a href="./product1.html">产品展示1</a></li>
-									<li class="menu-item"><a href="./product2.html">产品展示2</a></li>
-									<li class="menu-item"><a href="./product3.html">产品展示3</a></li>
-								</ul>
-                <!-- sub-menu end-->
-              </li>
-              <li><a href="./example.html">公益活动</a></li>
-              <li><a href="./solution.html">解决方案</a></li>
-              <li>
-                <a href="./news.html">新闻中心</a>
-                <!-- sub-menu start-->
-                <ul class="sub-menu">
-									<li class="menu-item"><a href="./news-content.html">公司动态</a></li>
-									<li class="menu-item"><a href="./404-dark.html">行业动态</a></li>
-									<li class="menu-item"><a href="./404-light.html">精彩专题</a></li>
-								</ul>
-                <!-- sub-menu end-->
-              </li>
-              <li><a href="./about.html">关于我们</a></li>
-              <li><a href="./join.html">产品服务</a></li>
-              <li><a href="./contact.html">联系我们</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--nav end-->
-      </div>
-
+    <!-- 导航栏和登录、注册 -->
+    <div ng-app="testNav">
+      <nav-word></nav-word>
     </div>
+    <!-- //导航栏和登录、注册 -->
 <!-- 实验 -->
 <div class="am-tabs" data-am-tabs>
   <ul class="am-tabs-nav am-nav am-nav-tabs">
@@ -613,6 +497,8 @@
   </div>
   <script src="../assets/js/jquery-2.1.0.js" charset="utf-8"></script>
   <script src="../assets/js/amazeui.js" charset="utf-8"></script>
+  <script src="../assets/js/angular.min.js" charset="utf-8"></script>
+  <script src="../assets/js/nav.min.js" charset="utf-8"></script>
 </body>
 
 </html>
