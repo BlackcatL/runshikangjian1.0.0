@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="newsword">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,12 @@
   <link rel="stylesheet" href="../assets/css/amazeui.css" />
   <link rel="stylesheet" href="../assets/css/common.min.css" />
   <link rel="stylesheet" href="../assets/css/news.min.css" />
-
 </head>
 <body>
   <div class="layout">
     <!--===========layout-header================-->
     <!-- 导航栏和登录、注册 -->
-    <div ng-app="testNav">
-      <nav-word></nav-word>
-    </div>
+    <nav-word></nav-word>
     <!-- //导航栏和登录、注册 -->
 
     <!--===========layout-container================-->
@@ -53,7 +50,7 @@
             <div class="article--content">
               <p>
                 7月19日，云适配（美通云动（北京）科技有限公司）今日宣布，由中国通信标准化协会管理，工业和信息化部业务指导下的数据中心联盟与移动智能终端技术创新与产业联盟发起的移动信息化可信选型认证（第一批）评选中，云适配两大产品Enterplorer企业浏览器、Enterplorer Studio开发工具，通过了移动企业应用平台的认证，成为“第一批”获得移动信息化可信选型认证的两大产品。该结果已于今天上午在北京召开“2016移动智能终端峰会新闻发布会暨移动信息化可信选型认证结果发布会”上进行了通报。
-							</p>
+              </p>
               <figure><img src="../assets/images/news/post01.jpg" alt=""></figure>
               <p>
                 据了解，移动信息化可信选型认证是由工业和信息化部指导，数据中心联盟组织，中国信息通信研究院测试评估面向移动办公、移动应用、移动开发等领域新发起的一个评估认证，是目前国内唯一针对移动信息化选型可信性的权威认证体系，为用户选择可信赖的移动信息化解决方案提供了很好的依据。它是继数据中心联盟推出可信云认证之后，在移动办公、移动信息化领域开辟的又一个权威认证。
@@ -73,52 +70,52 @@
 
           <div class="comments">
             <div class="comments">
-							<h2 class="comments--title">评论</h2>
-							<ul class="comments_list">
-								<li class="comment">
-									<header class="comment--header">
-										<figure class="comment--userpic"><img src="../assets/images/news/av01.jpg" alt=""></figure>
-										<strong class="comment--username"><a href="#">Brad Bukovsky</a></strong>
-										<time datetime="2001-05-15T19:00" class="comment--date">30th of January, 2016</time>
-									</header>
-									<div class="comment--content">
-										<p>
+              <h2 class="comments--title">评论</h2>
+              <ul class="comments_list">
+                <li class="comment">
+                  <header class="comment--header">
+                    <figure class="comment--userpic"><img src="../assets/images/news/av01.jpg" alt=""></figure>
+                    <strong class="comment--username"><a href="#">Brad Bukovsky</a></strong>
+                    <time datetime="2001-05-15T19:00" class="comment--date">30th of January, 2016</time>
+                  </header>
+                  <div class="comment--content">
+                    <p>
                       评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论
-										</p>
-										<a href="#" class="comment--reply">回复</a>
-									</div>
-									<ul class="comments_list">
-										<li class="comment">
-											<header class="comment--header">
-												<figure class="comment--userpic"><img src="../assets/images/news/av02.jpg" alt=""></figure>
-												<strong class="comment--username"><a href="#">Brad Bukovsky</a></strong>
-												<time datetime="2001-05-15T19:00" class="comment--date">30th of January, 2016</time>
-											</header>
-											<div class="comment--content">
-												<p>
+                    </p>
+                    <a href="#" class="comment--reply">回复</a>
+                  </div>
+                  <ul class="comments_list">
+                    <li class="comment">
+                      <header class="comment--header">
+                        <figure class="comment--userpic"><img src="../assets/images/news/av02.jpg" alt=""></figure>
+                        <strong class="comment--username"><a href="#">Brad Bukovsky</a></strong>
+                        <time datetime="2001-05-15T19:00" class="comment--date">30th of January, 2016</time>
+                      </header>
+                      <div class="comment--content">
+                        <p>
                           评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评
-												</p>
-												<a href="#" class="comment--reply">回复</a>
-											</div>
-										</li>
-									</ul>
-								</li>
-								<li class="comment">
-									<header class="comment--header">
-										<figure class="comment--userpic"><img src="../assets/images/news/av01.jpg" alt=""></figure>
-										<strong class="comment--username"><a href="#">Brad Bukovsky</a></strong>
-										<time datetime="2001-05-15T19:00" class="comment--date">30th of January, 2016</time>
-									</header>
-									<div class="comment--content">
-										<p>
+                        </p>
+                        <a href="#" class="comment--reply">回复</a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="comment">
+                  <header class="comment--header">
+                    <figure class="comment--userpic"><img src="../assets/images/news/av01.jpg" alt=""></figure>
+                    <strong class="comment--username"><a href="#">Brad Bukovsky</a></strong>
+                    <time datetime="2001-05-15T19:00" class="comment--date">30th of January, 2016</time>
+                  </header>
+                  <div class="comment--content">
+                    <p>
                       评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论
-										</p>
-										<a href="#" class="comment--reply">回复</a>
-									</div>
-								</li>
-							</ul>
-							<div class="comment_form">
-								<h2 class="comment_form--title">Leave Comment</h2>
+                    </p>
+                    <a href="#" class="comment--reply">回复</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="comment_form">
+                <h2 class="comment_form--title">Leave Comment</h2>
                 <form class="am-form am-form-horizontal">
                   <div class="am-form-group">
                     <div class="am-g">
@@ -141,8 +138,8 @@
                   </div>
                 </form>
 
-							</div>
-						</div>
+              </div>
+            </div>
           </div>
         </div>
         <!--news-section left end-->
@@ -153,25 +150,25 @@
             <div class="widget">
               <h2 class="widget--title"><i class="am-icon-file-text-o"></i>最新资讯</h2>
               <ul>
-								<li><a href="#">公司报道</a></li>
-								<li><a href="#">行业资讯</a></li>
-								<li><a href="#">云适配观点</a></li>
-							</ul>
+                <li><a href="#">公司报道</a></li>
+                <li><a href="#">行业资讯</a></li>
+                <li><a href="#">云适配观点</a></li>
+              </ul>
             </div>
             <div class="widget">
               <h2 class="widget--title"><i class="am-icon-comments-o"></i>热门动态</h2>
               <ul>
-								<li><a href="#">科大讯飞严峻：借力HTML5 推进“智能语音技术”应用普及</a></li>
-								<li><a href="#">金山万勇：打破信息孤岛 HTML5优势凸显将成核心</a></li>
-								<li><a href="#">阿里吴志华：基于HTML5技术开发Native体验应用</a></li>
-							</ul>
+                <li><a href="#">科大讯飞严峻：借力HTML5 推进“智能语音技术”应用普及</a></li>
+                <li><a href="#">金山万勇：打破信息孤岛 HTML5优势凸显将成核心</a></li>
+                <li><a href="#">阿里吴志华：基于HTML5技术开发Native体验应用</a></li>
+              </ul>
             </div>
             <div class="widget">
               <h2 class="widget--title"><i class="am-icon-rss"></i>站内公告</h2>
               <ul>
-								<li><a href="#">今天的应用号只是用了HTML技术中无需下载安装、跨平台的功能， 并没有用到HTML开发互联的精髓。 它只是一个...</a><span class="rss-date">November 10, 2015</span></li>
-								<li><a href="#">云适配带来了一个全新的“互联网+政务”解决方案，我们可以非常好的利用你现有的IT系统，就是你还是用原来的PC网站一套系统，只要安装一下云适配的产品Xcloud网站跨屏...</a><span class="rss-date">November 10, 2015</span></li>
-							</ul>
+                <li><a href="#">今天的应用号只是用了HTML技术中无需下载安装、跨平台的功能， 并没有用到HTML开发互联的精髓。 它只是一个...</a><span class="rss-date">November 10, 2015</span></li>
+                <li><a href="#">云适配带来了一个全新的“互联网+政务”解决方案，我们可以非常好的利用你现有的IT系统，就是你还是用原来的PC网站一套系统，只要安装一下云适配的产品Xcloud网站跨屏...</a><span class="rss-date">November 10, 2015</span></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -221,74 +218,11 @@
   </div>
 
   <!--===========layout-container================-->
-  <div class="layout-footer">
-    <div class="footer">
-      <div style="background-color:#383d61" class="footer--bg"></div>
-      <div class="footer--inner">
-        <div class="container">
-          <div class="footer_main">
-            <div class="am-g">
-              <div class="am-u-md-3 ">
-                <div class="footer_main--column">
-                  <strong class="footer_main--column_title">关于我们</strong>
-                  <div class="footer_about">
-                      <p class="footer_about--text">
-                        健康是人类永恒的主题，也是社会进步的重要标志。随着十八届五中全会公报的发布，一个全新概念以白纸黑字的形式进入人们视野，落入人们的日常生活——健康中国。
-                      </p>
-                      <p class="footer_about--text">
-                        2016年10月25日，国务院印发了“健康中国2030”规划纲要，这味着“健康中国”战略的正式落地和实施。2016年12月润世康健出现。
-                      </p>
-                    </div>
-                </div>
-              </div>
-
-              <!-- <div class="am-u-md-3 ">
-                <div class="footer_main--column">
-                  <strong class="footer_main--column_title">产品中心</strong>
-                  <ul class="footer_navigation">
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Enterplorer 企业浏览器</a></li>
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Xcloud 网站跨屏云</a></li>
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Amaze UI 前端开发框架</a></li>
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Amaze UI 前端开发框架</a></li>
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Amaze UI 前端开发框架</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="am-u-md-3 ">
-                <div class="footer_main--column">
-                  <strong class="footer_main--column_title">技术支持</strong>
-                  <ul class="footer_navigation">
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
-                    <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
-                  </ul>
-                </div>
-              </div> -->
-
-              <div class="am-u-md-3 ">
-                <div class="footer_main--column">
-                  <strong class="footer_main--column_title">联系详情</strong>
-                  <ul class="footer_contact_info">
-                    <li class="footer_contact_info--item"><i class="am-icon-phone"></i><span>服务专线：010-84763288</span></li>
-                    <li class="footer_contact_info--item"><i class="am-icon-envelope-o"></i><span>www.jkglfamily.com</span></li>
-                    <li class="footer_contact_info--item"><i class="am-icon-map-marker"></i><span>北京市朝阳区望京阜荣街15号院2号楼3号底商</span></li>
-                    <li class="footer_contact_info--item"><i class="am-icon-clock-o"></i><span>了解健康 <a href="http://www.jkglfamily.com/" target="_blank" title="润世康健">润世康健</a> - Collect from <a href="http://www.jkglfamily.cn/" title="润世康健" target="_blank">送爱到心</a></span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <footer-word></footer-word>
   <script src="../assets/js/jquery-2.1.0.js" charset="utf-8"></script>
   <script src="../assets/js/amazeui.js" charset="utf-8"></script>
   <script src="../assets/js/angular.min.js" charset="utf-8"></script>
-  <script src="../assets/js/nav.min.js" charset="utf-8"></script>
+  <script src="../assets/js/news.min.js" charset="utf-8"></script>
 </body>
 
 </html>
