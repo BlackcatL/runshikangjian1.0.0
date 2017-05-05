@@ -9712,7 +9712,7 @@ TODO:
   overflow: visible;
 }
 .am-tabs-bd-ofv > .am-tab-panel {
-  display: none;
+  display: block;
 }
 .am-tabs-bd-ofv > .am-tab-panel.am-active {
   display: block;
