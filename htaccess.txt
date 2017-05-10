@@ -1,0 +1,13 @@
+1 # 将 RewriteEngine 模式打开
+　　2 RewriteEngine On
+　　3
+　　4 RewiteBase /
+　　5
+　　6 RewriteCond %{HTTP_HOST} ^（www\.）？example\.com$ [NC]
+　　7 RewriteCond %{REQUEST_URI} !^/bbs/
+　　8 RewriteCond %{REQUEST_FILENAME} !-f
+　　9 RewriteCond %{REQUEST_FILENAME} !-d
+　　10 RewriteRule ^（。*）$ bbs/$1
+　　11 # 没有输入文件名的默认到到首页
+　　12 RewriteCond %{HTTP_HOST} ^（www\.）？example\.com$ [NC]
+　　13 RewriteRule ^（/）？$ bbs/forum.php [L]
