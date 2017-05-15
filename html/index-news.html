@@ -6,8 +6,8 @@
       </span>
       <dl>
         <dt>新闻推送</dt>
-        <dd>
-          <a href="./news-min.html">2017年04月28日，辣妈课堂开课了。</a>
+        <dd ng-repeat="everyProduct in categoryProducts">
+          <a href="./news-min.html" ng-bind=everyProduct.title></a>
         </dd>
       </dl>
     </li>
@@ -18,7 +18,7 @@
       <dl>
         <dt>课程日报</dt>
         <dd>
-          <a href="./news-min.html">5月12日（14:00-15:00）：《你的眼睛很好色》---谭慧媛老师。</a>
+          <a href="./news-min.html">5月16日（19:00-23:30）：《飘香之美（香道）》---怀一老师。</a>
         </dd>
       </dl>
     </li>
