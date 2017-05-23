@@ -1,0 +1,165 @@
+@charset "utf-8";
+body,div,h1,h2,h3,h4,h5,h6,nav,p{
+	margin: 0;
+	padding: 0;
+	font-family: "SimHei","tahoma","arial","Microsoft YaHei";
+	font-size: 14px;
+	text-decoration: none;
+	list-style-type: none;
+}
+ul,ul li{
+	text-decoration: none;
+	list-style-type: none;
+}
+body{
+	background: rgb(238,238,238);
+}
+p{
+	text-indent: 2em;
+	line-height:2.5;
+}
+/*  nav导航栏  */
+body .nav{
+	width: 100%;
+	height: 4.5em;
+	padding: 10px 6px 20px;
+	position: fixed;
+	bottom: 0;
+	overflow: hidden;
+	background: rgb(255,255,255);
+}
+body .nav .nav_ul{
+	position:absolute;
+	clear: both;
+}
+.clear {
+	clear: both;
+}
+body .nav .nav_ul .nav_ul_li{
+	padding: 6px 45px 10px;
+	float: left;
+	display: inline-block;
+	width: 130px;
+	color: rgb(106,106,106);
+}
+body .nav .nav_ul .nav_ul_li div{
+	width: 25%;
+	margin: 0 auto;
+}
+body .nav .nav_ul .nav_ul_li div img{
+	width: 100%;
+	margin: 0 auto;
+}
+body .nav .nav_ul .nav_ul_li p{
+	font-family: SimHei;
+	font-size: 1em;
+	margin: 15px auto 0;
+	text-indent: 0;
+	line-height:0;
+	text-align:center;
+}
+/*  /nav导航栏  */
+
+/*联系我们*/
+/*body .lxwm{
+	width: 37%;
+	padding: 1.4% 6px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	background: rgb(255,255,255);
+}*/
+/*/联系我们*/
+
+/*  html_title页面标题  */
+body .html_title{
+	width: 100%;
+	padding: 1.2% 0;
+	background: rgb(40,40,40);
+	position: fixed;
+	top: 0;
+}
+body .html_title h1{
+	color: rgb(255,255,255);
+	font-family: SimHei;
+	font-size: 1.5em;
+	text-align:center;
+}
+/*  html_title页面标题  */
+
+/*  Banner轮播  */
+body .banner{
+	width: 100%;
+}
+body .banner .banner_img{
+	width: 100%;
+}
+body .banner .banner_img img{
+	width: 100%;
+}
+
+body .banner .banner_title{
+	padding: 12px 14px;
+	background: rgba(0,0,0,0.3);
+}
+body .banner .banner_title .time{
+	width: 50%;
+	font-size: 1.3em;
+	font-family: SimHei;
+	display: inline-block;
+	color: rgb(255,255,255);
+}
+body .banner .banner_title ul{
+	display: inline-block;
+	float: right;
+}
+body .banner .banner_title ul li{
+	width: 8px;
+	height: 8px;
+	background: rgba(0,0,0,0.5);
+	margin: 5px 20px;
+	display: block;
+	float: left;
+	border-radius: 50%;
+}
+/*  /Banner轮播  */
+
+/*  content内容公用  */
+body .content{
+	width: 90%;
+	margin: 66px auto 25px;
+}
+body .content h2{
+	font-size: 2.0em;
+	color: rgb(0,96,18); 
+	text-align:center;
+	background: none;
+}
+body .content h3{
+	font-family: 'Arial Regular';
+	font-size: 0.8em;
+	color: rgb(0,96,18); 
+	margin-bottom: 40px;
+	text-align:center;
+}
+body .content .neirong{
+	width: 100%;
+	background: rgb(255,255,255);
+	box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5)
+}
+body .content .neirong p{
+	font-size: 1em;
+	display: block;
+	color: rgb(46,46,46);
+}
+body .content .neirong .img img{
+	width: 100%;
+}
+/*  /content内容公用  */
+
+/*  公司简介  */
+body .content{
+
+}
+/*  /公司简介  */

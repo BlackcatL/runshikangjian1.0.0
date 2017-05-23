@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+    <!-- <script type="text/javascript" src="2.js"></script> -->
+    <script >
+        function move(fangxiang){
+
+        var per = document.getElementById("cc");
+        var j=per.style.top;
+        var k=per.style.left;
+        j=parseInt(j.substr(0,j.length-2));
+        k=parseInt(k.substr(0,k.length-2));
+
+        switch(fangxiang)
+        {
+            case 1:
+                per.style.top=(j-10)+"px";
+                break;
+            case 2:
+                per.style.top=(j+10)+"px";
+                break;
+            case 3:
+                per.style.left=(k-10)+"px";
+                break;
+            case 4:
+                per.style.left=(k+10)+"px";
+                break;
+        }
+    }
+
+    </script>
+</head>
+<body>
+<div style="width:500;height:500;background-color:pink">
+    <div style="background-color:blue;width:50;height:50;position:absolute;left:40px;top:40px" id="cc"></div>
+</div>
+
+<button style="margin-left:30px;" onclick="move(1)">W</button><br>
+<button onclick="move(3)">A</button>
+<button onclick="move(2)">S</button>
+<button  onclick="move(4)">D</button><br>
+
+</body>
+</html>
