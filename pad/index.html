@@ -40,20 +40,31 @@
 				<!-- /html标题 -->
 
 				<!-- 轮播 -->
-				<div class="banner" style="clear: both;">
-					<div class="banner_img">
-						<img src="img/banner04.jpg">
+
+				<div id="banner" style="position: relative;">
+					<div id="jiaodiantu" style="position: absolute;">
+						<div class="tu"><img class="banner_img" src="../images/index/banner01.jpg"></div>
+						<div class="tu"><img class="banner_img" src="../images/index/banner02.jpg"></div>
+						<div class="tu"><img class="banner_img" src="../images/index/banner03.jpg"></div>
+						<div class="tu"><img class="banner_img" src="../images/index/banner04.jpg"></div>
 					</div>
-	
-					<div class="banner_title">
-						<div id="time" class="time"></div>
-						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
+
+					<div id="left"><a href="#"><</a></div>
+					<div id="right"><a href="#">></a></div>
+
+					<ul id="xiabian">
+						<li class="dian" id="dian_1">1</li>
+						<li class="dian" id="dian_2">2</li>
+						<li class="dian" id="dian_3">3</li>
+						<li class="dian" id="dian_4">4</li>
+					</ul>
+
+					<div id="time" class="time" style="z-index: 80"></div>
 				</div>
+
+				<script type="text/javascript" charset="utf-8">
+
+				</script>
 				<!-- /轮播 -->
 
 				<!-- index板块 -->
@@ -169,11 +180,12 @@
 		
 		<script type="text/javascript" charset="utf-8" src="js/base.min.js"></script>
 
+		<!-- <script type="text/javascript" charset="utf-8" src="../js/jquery-2.1.0.js"></script> -->
 		<script type="text/javascript" charset="utf-8" src="js/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/pab.js"></script>
 
-		<script type="text/javascript" charset="utf-8" src="js/angular.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../js/angular.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/pab.min.js"></script>
 	</body>
 </html>

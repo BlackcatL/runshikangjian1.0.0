@@ -1,23 +1,34 @@
 @charset "utf-8";
-body,div,h1,h2,h3,h4,h5,h6,nav,p{
+/* 公用 */
+body,div, ul, li, dd, dt, dd, a, span ,p {
 	margin: 0;
 	padding: 0;
-	font-family: "SimHei","tahoma","arial","Microsoft YaHei";
+	font-family: "tahoma","arial","Microsoft YaHei";
 	font-size: 14px;
+	list-style-type: none;
+	text-decoration: none;
+	color: #000;
+}
+a, a:hover{
 	text-decoration: none;
 	list-style-type: none;
 }
-ul,ul li{
-	text-decoration: none;
-	list-style-type: none;
+.clear {
+	zoom: 1;
 }
-body{
-	background: rgb(238,238,238);
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 0;
 }
-p{
-	text-indent: 2em;
-	line-height:2.5;
+p {
+	line-height:2;
+	 text-indent:2em;
 }
+/* /公用 */
+
 /*  nav导航栏  */
 body .nav{
 	width: 100%;
@@ -36,10 +47,10 @@ body .nav .nav_ul{
 	clear: both;
 }
 body .nav .nav_ul .nav_ul_li{
-	padding: 6px 45px 10px;
+	padding: 6px 0 10px;
 	float: left;
 	display: inline-block;
-	width: 130px;
+	width: 100px;
 	color: rgb(106,106,106);
 }
 body .nav .nav_ul .nav_ul_li div{
@@ -71,6 +82,74 @@ body .nav .nav_ul .nav_ul_li p{
 	background: rgb(255,255,255);
 }*/
 /*/联系我们*/
+/* banner */
+#banner {
+	width: 100%;
+	height: 30em;
+	position: relative;
+	margin: 10px auto;
+	overflow: hidden;
+	z-index: 98;
+}
+#banner #jiaodiantu {
+	width: 400%;
+	height: 30em;
+	position: absolute;
+	transition: all 0.5s ease-out;
+}
+#banner #jiaodiantu .tu {
+	width: 25%;
+	height: 30em;
+	display: inline-block;
+	float: left;
+}
+#banner #jiaodiantu img {
+	width: 100%;
+	height: 30em;
+}
+#banner #left, #banner #right {
+	width: 80px;
+	height: 150px;
+	line-height: 150px;
+	background: rgba(0,0,0,0.6);
+	display: block;
+	position: absolute;
+	top: 7em;
+}
+#banner a {
+	width: 80px;
+	height: 150px;
+	color: #474747;
+	font-size: 80px;
+	text-indent: 10px;
+	display: block;
+}
+#banner #right {
+	right: 0;
+}
+#banner #xiabian {
+	width: 100%;
+	height: 40px;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 27em;
+	z-index: 2;
+}
+#banner #xiabian .dian {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-indent: 6px;
+	background: rgba(0,0,0,0.5);
+	display: inline-block;
+	border-radius: 50%;
+	color: #fff;
+	margin: 10px 5px;
+}
+#banner #xiabian #dian_1 {
+	margin-left:80%; 
+}
+/* /banner */
 
 /*  html_title页面标题  */
 body .html_title{
@@ -79,6 +158,7 @@ body .html_title{
 	background: rgb(40,40,40);
 	position: fixed;
 	top: 0;
+	z-index: 99;
 }
 body .html_title h1{
 	color: rgb(255,255,255);

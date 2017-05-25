@@ -3,19 +3,19 @@ var arr = [{
     txt:"首页",
     img:"img/01.png"
 },{
-    txt:"终身健康管理",
+    txt:"健康管理",
     img:"img/02.png"
 },{
-    txt:"HRA健康评估",
+    txt:"健康评估",
     img:"img/03.png"
 },{
     txt:"经络调理",
     img:"img/04.png"
 },{
-    txt:"营养与膳食",
+    txt:"营养膳食",
     img:"img/05.png"
 },{
-    txt:"私人医生服务",
+    txt:"私人医生",
     img:"img/06.png"
 },{
     txt:"绿色就医",
@@ -67,35 +67,35 @@ function begin(arr){
 begin(arr);
 
 //nav移动(单个)
-function getOffsetSum(ele){
-    var left=0;
-    while(ele){
-        left+=ele.offsetLeft;
-        ele=ele.offsetParent;
-    }
-    return { left:left }
-}
+// function getOffsetSum(ele){
+//     var left=0;
+//     while(ele){
+//         left+=ele.offsetLeft;
+//         ele=ele.offsetParent;
+//     }
+//     return { left:left }
+// }
 
-var maindiv=document.getElementById("nav_ul");
-maindiv.addEventListener("touchmove",touch,false);
-function touch(e){
-    switch (e.type) {
-        case "touchmove":
-        var ele=getOffsetSum(e.target);
-        var left=ele.left;
+// var maindiv=document.getElementById("nav_ul");
+// maindiv.addEventListener("touchmove",touch,false);
+// function touch(e){
+//     switch (e.type) {
+//         case "touchmove":
+//         var ele=getOffsetSum(e.target);
+//         var left=ele.left;
  
-        var x=e.touches[0].clientX-left/2;
-        e.preventDefault();
+//         var x=e.touches[0].clientX-left/2;
+//         e.preventDefault();
 
-        e.target.style.marginLeft=x+"px";
-        e.target.style.marginTop=y+"px";
+//         e.target.style.marginLeft=x+"px";
+//         e.target.style.marginTop=y+"px";
 
-    }
-}
+//     }
+// }
 
 
 
-console.log();
+// console.log();
 //nav移动
 
 //选项卡特效
@@ -115,15 +115,16 @@ $(function (){
 /* /nav轮播 */
 
 /* banner轮播 */
-var arrimg = [{
-    img:"img/banner01.jpg"
-},{
-    img:"img/banner02.jpg"
-},{
-    img:"img/banner03.jpg"
-},{
-    img:"img/banner04.jpg"
-}];
+// var arrimg = [{
+//     img:"img/banner01.jpg"
+// },{
+//     img:"img/banner02.jpg"
+// },{
+//     img:"img/banner03.jpg"
+// },{
+//     img:"img/banner04.jpg"
+// }];
 
 
 /* /banner轮播 */
+
