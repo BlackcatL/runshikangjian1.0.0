@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* 公用 */
+div, ul, li, dd, dt, dd, a, span ,p {
+	margin: 0;
+	padding: 0;
+	font-family: "tahoma","arial","Microsoft YaHei";
+	font-size: 14px;
+	list-style-type: none;
+	text-decoration: none;
+}
+a, a:hover{
+	list-style-type: none;
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+.clear {
+	zoom: 1;
+}
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+p {
+	line-height:2;
+	 text-indent:2em;
+}
+/* /公用 */
+
+/*  nav导航栏  */
+body .nav{
+	width: 100%;
+	height: 4.5em;
+	padding: 10px 0 20px;
+	position: fixed;
+	bottom: 0;
+	overflow: hidden;
+	background: rgb(255,255,255);
+}
+body .nav .nav_ul{
+	position:absolute;
+	clear: both;
+	width: 100%;
+}
+.clear {
+	clear: both;
+}
+body .nav .nav_ul .nav_ul_li{
+	padding: 6px 1.4% 10px;
+	width: 8.3%;
+	float: left;
+	display: inline-block;
+	color: rgb(106,106,106);
+}
+body .nav .nav_ul .nav_ul_li div{
+	margin: 0 auto;
+	width: 30%;
+}
+body .nav .nav_ul .nav_ul_li div img{
+	width: 100%;
+	margin: 0 auto;
+}
+body .nav .nav_ul .nav_ul_li p{
+	font-family: SimHei;
+	font-size: 1em;
+	margin: 15px auto 0;
+	text-indent: 0;
+	line-height:0;
+	text-align:center;
+}
+/*  /nav导航栏  */
+
+/*联系我们*/
+/*body .lxwm{
+	width: 37%;
+	padding: 1.4% 6px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	background: rgb(255,255,255);
+}*/
+/*/联系我们*/
+/* banner */
+#banner {
+	width: 100%;
+	height: 30em;
+	position: relative;
+	margin: 10px auto;
+	overflow: hidden;
+	z-index: 98;
+}
+#banner #jiaodiantu {
+	width: 400%;
+	height: 30em;
+	position: absolute;
+	transition: all 0.5s ease-out;
+}
+#banner #jiaodiantu .tu {
+	width: 25%;
+	height: 30em;
+	display: inline-block;
+	float: left;
+}
+#banner #jiaodiantu img {
+	width: 100%;
+	height: 30em;
+}
+#banner #left, #banner #right {
+	width: 80px;
+	height: 150px;
+	line-height: 150px;
+	background: rgba(0,0,0,0.6);
+	display: block;
+	position: absolute;
+	top: 7em;
+}
+#banner a {
+	width: 80px;
+	height: 150px;
+	color: #474747;
+	font-size: 80px;
+	text-indent: 10px;
+	display: block;
+}
+#banner #right {
+	right: 0;
+}
+#banner #xiabian {
+	width: 100%;
+	height: 40px;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 27em;
+	z-index: 2;
+}
+#banner #xiabian .dian {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-indent: 6px;
+	background: rgba(0,0,0,0.5);
+	display: inline-block;
+	border-radius: 50%;
+	color: #fff;
+	margin: 10px 5px;
+}
+#banner #xiabian #dian_1 {
+	margin-left:80%; 
+}
+/* /banner */
+
+/*  html_title页面标题  */
+body .html_title{
+	width: 100%;
+	padding: 1.2% 0;
+	background: rgb(40,40,40);
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+body .html_title h1{
+	color: rgb(255,255,255);
+	font-family: SimHei;
+	font-size: 1.5em;
+	text-align:center;
+}
+/*  html_title页面标题  */
+
+/*  Banner轮播  */
+body .banner{
+	width: 100%;
+}
+body .banner .banner_img{
+	width: 100%;
+}
+body .banner .banner_img img{
+	width: 100%;
+}
+
+body .banner .banner_title{
+	padding: 12px 14px;
+	background: rgba(0,0,0,0.3);
+}
+body .banner .banner_title .time{
+	width: 50%;
+	font-size: 1.3em;
+	font-family: SimHei;
+	display: inline-block;
+	color: rgb(255,255,255);
+}
+body .banner .banner_title ul{
+	display: inline-block;
+	float: right;
+}
+body .banner .banner_title ul li{
+	width: 8px;
+	height: 8px;
+	background: rgba(0,0,0,0.5);
+	margin: 5px 20px;
+	display: block;
+	float: left;
+	border-radius: 50%;
+}
+/*  /Banner轮播  */
+
+/*  content内容公用  */
+body .content{
+	width: 90%;
+	margin: 66px auto 25px;
+}
+body .content h2{
+	font-size: 2.0em;
+	color: rgb(0,96,18); 
+	text-align:center;
+	background: none;
+}
+body .content h3{
+	font-family: 'Arial Regular';
+	font-size: 0.8em;
+	color: rgb(0,96,18); 
+	margin-bottom: 40px;
+	text-align:center;
+}
+body .content .neirong{
+	width: 100%;
+	background: rgb(255,255,255);
+	box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.5)
+}
+body .content .neirong p{
+	font-size: 1em;
+	display: block;
+	color: rgb(46,46,46);
+}
+body .content .neirong .img img{
+	width: 100%;
+}
+/*  /content内容公用  */
+
+/*  公司简介  */
+body .content{
+
+}
+/*  /公司简介  */

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title></title>
+
+	<style type="text/css">
+body,div, ul, li, dd, dt, dd, a, span ,p {
+	margin: 0;
+	padding: 0;
+	font-family: "tahoma","arial","Microsoft YaHei";
+	font-size: 14px;
+	list-style-type: none;
+	text-decoration: none;
+	color: #000;
+}
+a, a:hover{
+	text-decoration: none;
+	list-style-type: none;
+}
+.clear {
+	zoom: 1;
+}
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+
+#banner {
+	width: 1000px;
+	height: 600px;
+	position: relative;
+	margin: 10px auto;
+	overflow: hidden;
+}
+#banner #jiaodiantu {
+	width: 4000px;
+	height: 600px;
+	position: absolute;
+	transition: all 0.5s ease-out;
+}
+#banner #jiaodiantu .tu {
+	width: 1000px;
+	height: 600px;
+	display: inline-block;
+	float: left;
+}
+#banner #jiaodiantu img {
+	width: 1000px;
+	height: 600px;
+}
+#banner #left, #banner #right {
+	width: 80px;
+	height: 150px;
+	line-height: 150px;
+	background: rgba(0,0,0,0.6);
+	display: block;
+	position: absolute;
+	top: 230px;
+}
+#banner a {
+	width: 80px;
+	height: 150px;
+	color: #474747;
+	font-size: 80px;
+	text-indent: 10px;
+	display: block;
+}
+#banner #right {
+	left: 920px;
+}
+#banner #xiabian {
+	width: 1000px;
+	height: 20px;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 580px;
+	z-index: 2;
+}
+#banner #xiabian .dian {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-indent: 6px;
+	background: rgba(0,0,0,0.5);
+	display: inline-block;
+	border-radius: 50%;
+	color: #fff;
+	margin: 0 5px;
+}
+#banner #xiabian #dian_1 {
+	margin-left:850px; 
+}
+
+#main {
+	width: 800px;
+	height: 450px;
+	margin: 10px auto;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid rgb(147,147,147);
+}
+#main #lunbo {
+	width: 4000px;
+	height: 450px;
+	position: absolute;
+}
+#main .huadong {
+	width: 800px;
+	height: 450px;
+	float: left;
+}
+#main .huadong img {
+	width: 800px;
+	height: 450px;
+}
+		
+		</style>
+	</head>
+	
+	<body>
+		<div id="banner" style="position: relative;">
+					<div id="jiaodiantu" style="position: absolute;">
+						<div class="tu"><img class="banner_img" src="../images/index/banner01.jpg"></div>
+						<div class="tu"><img class="banner_img" src="../images/index/banner02.jpg"></div>
+						<div class="tu"><img class="banner_img" src="../images/index/banner03.jpg"></div>
+						<div class="tu"><img class="banner_img" src="../images/index/banner04.jpg"></div>
+					</div>
+
+					<div id="left"><a href="#"><</a></div>
+					<div id="right"><a href="#">></a></div>
+
+					<ul id="xiabian">
+						<li class="dian" id="dian_1">1</li>
+						<li class="dian" id="dian_2">2</li>
+						<li class="dian" id="dian_3">3</li>
+						<li class="dian" id="dian_4">4</li>
+					</ul>
+
+					<div id="time" class="time" style="z-index: 80"></div>
+				</div>
+
+				<script type="text/javascript" charset="utf-8">
+var banner = document.getElementById("banner");// 获取最外层的div
+var jiaodiantu = document.getElementById("jiaodiantu");// 获取元素
+var left = document.getElementById("left");// 上一页
+var right = document.getElementById("right");// 下一页
+var dian = document.getElementsByClassName("dian");// 所有的小圆点
+
+// 定义变量记录当前显示图片的位置
+var n = 0;
+// 下一页
+dian[n].onclick = function(){
+	jiaodiantu.style.left = n*(-1000)+"px";
+}
+right.onclick = function(){
+	nextFn();
+}
+//定义下一页函数
+function nextFn() {
+	n++;
+	if (n > 3){
+		n = 0
+	}
+	//初始化颜色
+	for (var i = 0; i < dian.length; i++) {
+		dian[i].style.background = "rgba(0,0,0,0.5)";
+	};
+	dian[n].style.background = "rgb(0,0,255)";
+	jiaodiantu.style.left = n*(-1000)+"px";
+}
+// 上一页
+left.onclick = function(){
+	n--;
+	if(n < 0){
+		n = 3;
+	};
+	// 初始化li所有的颜色
+	for (var i = 0; i < dian.length; i++) {
+		dian[i].style.background = "rgba(0,0,0,0.5)";
+	};
+	dian[n].style.background = "rgb(0,0,255)";
+	jiaodiantu.style.left = n*(-1000)+"px";
+}
+// 定时滚动
+var time = 0;
+function autoPlay () {
+    time = setInterval(function(){
+    	nextFn();
+    }, 2000);
+}
+autoPlay();
+//鼠标动作
+banner.onmouseover = function(){ clearInterval(time); }
+banner.onmouseout = function(){ autoPlay(); }
+				</script>
+	</body>
+</html>
