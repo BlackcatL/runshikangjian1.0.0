@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html ng-app="padword">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8">
+		<title>北京润世康健健康管理有限公司欢迎您！</title>
+
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/index.min.css">
+	</head>
+
+	<body onLoad="titleScroll()">
+		<!-- 导航栏 -->
+		<nav-word></nav-word>
+		<!-- /导航栏 -->
+		<!-- <div id="lxwm" class="lxwm" style="height: 8em;">
+			<div style="float: left;width: 70%;">
+				<div style="margin: 10px 0">北京润世康健健康管理有限公司</div>
+				<div style="margin: 10px 0">联系电话：010-84763288</div>
+				<div style="margin: 10px 0">北京市朝阳区望京阜荣街15号院2号楼3号底商</div>
+			</div>
+
+			<div style="float: right;width: 30%;">
+				<img style="width: 100%;" src="img/erweima.jpg">
+			</div>
+
+			<div style="clear: both;"></div>
+		</div> -->
+
+		<div id="pageID" class="nav_ul_li"  js-tab="2" style="width: 100%; overflow: hidden;">
+			<div id="page01" class="page" style="width: 100%;display: none;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>首 页</h1>
+				</div>
+				<div style="clear: both;height: 3em;"></div>
+				<!-- /html标题 -->
+
+				<!-- 轮播 -->
+
+				<div id="banner" style="position: relative;">
+					<div id="jiaodiantu" style="position: absolute;">
+						<div class="tu"><img class="banner_img" src="../images/index/banner01.jpg"></div>
+						<div class="tu"><img class="banner_img" src="../images/index/banner02.jpg"></div>
+						<div class="tu"><img class="banner_img" src="../images/index/banner03.jpg"></div>
+						<div class="tu"><img class="banner_img" src="../images/index/banner04.jpg"></div>
+					</div>
+
+					<div id="left"><a href="#"><</a></div>
+					<div id="right"><a href="#">></a></div>
+
+					<ul id="xiabian">
+						<li class="dian" id="dian_1">1</li>
+						<li class="dian" id="dian_2">2</li>
+						<li class="dian" id="dian_3">3</li>
+						<li class="dian" id="dian_4">4</li>
+					</ul>
+
+					<div id="time" class="time" style="z-index: 80"></div>
+				</div>
+
+				<script type="text/javascript" charset="utf-8">
+
+				</script>
+				<!-- /轮播 -->
+
+				<!-- index板块 -->
+				<shouye-word></shouye-word>
+				<!-- /index板块 -->
+			</div>
+
+			<div id="page02" class="page" style="width: 100%;display: none;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>终身健康管理</h1>
+				</div>
+				<div style="clear: both;height: 3em;"></div>
+				<!-- /html标题 -->
+
+				<!-- 终身健康管理板块 -->
+				<jkgl-word></jkgl-word>
+				<!-- /终身健康管理板块 -->
+			</div>
+
+			<div id="page04" class="page" style="width: 100%;display: none;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>HRA健康筛查</h1>
+				</div>
+				<div style="clear: both;height: 3em;"></div>
+				<!-- /html标题 -->
+
+				<!-- HRA健康筛查板块 -->
+				<hra-word></hra-word>
+				<!-- /HRA健康筛查板块 -->
+			</div>
+
+			<div id="page03" class="page" style="width: 100%;display: none;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>经络调理</h1>
+				</div>
+				<div style="clear: both;height: 3em;"></div>
+				<!-- /html标题 -->
+
+				<!-- 经络调理板块 -->
+				<jltl-word></jltl-word>
+				<!-- /经络调理板块 -->
+			</div>
+
+			<div id="page05" class="page" style="width: 100%;display: none;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>营养与膳食</h1>
+				</div>
+				<div style="clear: both;height: 3em;"></div>
+				<!-- /html标题 -->
+
+				<!-- 营养与膳食板块 -->
+				<yyyss-word></yyyss-word>
+				<!-- /营养与膳食板块 -->
+			</div>
+
+			<div id="page06" class="page" style="width: 100%;display: none;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>私人医生服务</h1>
+				</div>
+				<div style="clear: both;height: 3em;"></div>
+				<!-- /html标题 -->
+
+				<!-- 私人医生服务板块 -->
+				<srys-word></srys-word>
+				<!-- /私人医生服务板块 -->
+			</div>
+
+			<div id="page07" class="page" style="width: 100%;display: none;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>绿色就医</h1>
+				</div>
+				<div style="clear: both;height: 3em;"></div>
+				<!-- /html标题 -->
+
+				<!-- 绿色就医板块 -->
+				<lsjy-word></lsjy-word>
+				<!-- /绿色就医板块 -->
+			</div>
+
+			<div id="page08" class="page" style="width: 100%;display: none;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>就诊陪护</h1>
+				</div>
+				<div style="clear: both;height: 3em;"></div>
+				<!-- /html标题 -->
+
+				<!-- 就诊陪护板块 -->
+				<jzph-word></jzph-word>
+				<!-- /就诊陪护板块 -->
+			</div>
+
+			<div id="page09" class="page" style="width: 100%;display: none;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>讲座沙龙</h1>
+				</div>
+				<div style="clear: both;height: 3em;"></div>
+				<!-- /html标题 -->
+
+				<!-- 讲座沙龙板块 -->
+				<jzsl-word></jzsl-word>
+				<!-- /讲座沙龙板块 -->
+			</div>
+
+			<div id="page10" class="page" style="width: 100%;display: block;">
+				<!-- html标题 -->
+				<div class="html_title">
+					<h1>讲座沙龙</h1>
+				</div>
+				<div style="clear: both;height: 10em;"></div>
+				<!-- /html标题 -->
+
+				<!-- 讲座沙龙板块 -->
+				<div class="xiangxineirong" style="width: 80%;margin: 0 10%; background: rgba(255,255,255,0.8);border: 3px solid rgb(0,96,18);padding: 10px;display: block;">
+					<div>
+						<div style="width: 30%;float: left;"><img style="width: 100%" src="img/liping.jpg"></div>
+
+						<ul style="width: 65%;float: left;">
+							<li style="margin: 15px 0 15px 3.5%"><p style="color: #006012">健康之源--何为养生</p></li>
+							<li style="margin: 15px 0 15px 3.5%"><p>讲师：李平</p></li>
+							<li style="margin: 15px 0 15px 3.5%"><p>2017年06月14日 15:00--16:30</p></li>
+						</ul>
+					</div>
+
+					<div class="guanbi" style="width: 5%;height: 20px;line-height: 20px;text-align: center;float: left;background: rgba(0,0,0,0.2);">×</div>
+
+					<div style="clear: both;width: 100%;"></div>
+
+					<p style="margin-top: 20px;">养生， 就是指通过各种方法颐养生命、增强体质、预防疾病，从而达到延年益寿的一种医事活动。</p>
+					<p style="margin-top: 20px;">所谓生，就是生命、生存、生长之意;所谓养，即保养、调养、补养之意。总之，养生就是保养生命的意思。以传统中医理论为指导，遵循阴阳五行生化收藏之变化规律，对人体进行科学调养，保持生命健康活力。</p>
+					<p style="margin-top: 20px;">精神养生是指通过怡养心神，调摄情志、调剂生活等方法，从而达到保养身体、减少疾病、增进健康、延年益寿的目的。</p>
+					<p style="margin-top: 20px;">“养生”是中医的一个概念。指保养、调养、颐养生命。即以调阴阳、和气血、保精神为原则，运用调神、导引吐纳、四时调摄、食养、药养、节欲、辟谷等多种方法，以期达到健康、长寿的目的</p>
+				</div>
+				<!-- /讲座沙龙板块 -->
+			</div>
+		</div>
+
+		
+		<script type="text/javascript" charset="utf-8" src="js/base.min.js"></script>
+
+		<!-- <script type="text/javascript" charset="utf-8" src="../js/jquery-2.1.0.js"></script> -->
+		<script type="text/javascript" charset="utf-8" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/pab.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jzsl.min.js"></script>
+
+		<script type="text/javascript" charset="utf-8" src="../js/angular.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/pab.min.js"></script>
+	</body>
+</html>

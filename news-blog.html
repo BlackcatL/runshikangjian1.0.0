@@ -1,5 +1,5 @@
 <div class="blog" ng-controller="newsBolg2">
-  <div class="am-g">
+  <div class="am-g" ng-repeat="everyJournalism in journalism">
   
     <div class="am-u-lg-4 am-u-md-6">
       <div class="article">
@@ -7,17 +7,17 @@
           <img src="images/news/b01.jpg" alt="" />
         </div>
         <div class="article-header">
-          <h2><a href="#" rel="" ng-bind="name"></a></h2>
+          <h2><a href="#" rel="" ng-bind="name">{{jou_title}}</a></h2>
           <ul class="article--meta">
-						<li class="article--meta_item -date" ng-bind="time"></li>
-						<li class="article--meta_item comments" ng-bind="comments"></li>
+						<li class="article--meta_item -date" ng-bind="time">{{jou_author}}</li>
+						<li class="article--meta_item comments" ng-bind="comments"{{jou_time}}</li>
 					</ul>
         </div>
         <div class="article--content">
-					<p ng-bind="neirong"></p>
+					<p ng-bind="neirong">{{jou_categroy}}</p>
 				</div>
         <div class="article--footer">
-  									<a href="#" class="link">Read More</a>
+  				<a href="#" class="link">Read More</a>
   			</div>
       </div>
     </div>

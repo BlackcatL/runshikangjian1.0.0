@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/common.min.css" />
   <link rel="stylesheet" href="css/news.min.css" />
 </head>
-<body>
+<body> <!-- ng-controller="newsWord" -->
   <div class="layout">
     <!--===========layout-header================-->
     <!-- 导航栏和登录、注册 -->
@@ -44,9 +44,44 @@
 					</p>
 				</div>
 
-        <div class="news-contaier">
+        <div class="news-contaier" ng-controller="newsBolg">
           <!-- 新闻内容（angular） -->
-          <news-bolg></news-bolg>
+          <div class="blog">
+            <div class="am-g">
+            
+              <div class="am-u-lg-4 am-u-md-6" ng-repeat="everyJournalism in journalism">
+                <div class="article">
+                  <div class="article-img">
+                    <img src="images/news/b01.jpg" alt="" />
+                  </div>
+                  <div class="article-header">
+                    <h2><a href="#" rel="">{{everyJournalism.jou_title}}</a></h2>
+                    <ul class="article--meta">
+                      <li class="article--meta_item -date">{{everyJournalism.jou_author}}</li>
+                      <li class="article--meta_item comments">{{everyJournalism.jou_time}}</li>
+                    </ul>
+                  </div>
+                  <div class="article--content">
+                    <p>{{everyJournalism.jou_category}}</p>
+                  </div>
+                  <div class="article--footer">
+                    <a href="#" class="link">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- pagination-->
+            <ul class="am-pagination" style="clear: both;">
+              <li class="am-disabled"><a href="#">&laquo;</a></li>
+              <li class="am-active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">&raquo;</a></li>
+            </ul>
+          </div>
           <!-- 新闻内容（angular） -->
         </div>
       </div>
